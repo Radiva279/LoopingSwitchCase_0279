@@ -7,6 +7,7 @@ int main(){
     int x;
     int perulanganWhile = 0;
     int perulanganDoWhile = 0;
+
     // Perulangan while
     cout << "perulangan dengan while" << endl;
     srand(time(0));
@@ -20,4 +21,13 @@ int main(){
     cout << "Nilai akhir x = " << x << endl;
     cout << "Jumlah perulangan = " << perulanganWhile << endl;
     cout << endl;
+
+    cout << "Perulangan dengan do while" << endl;
+    do{
+        cout << "nilai x = " << x << " Lari keliling lapangan!" << endl;
+        x = rand() % 10;
+        perulanganDoWhile++;
+    }while(x < 7);
+    cout << "Nilai akhir x = " << x << endl;
+    cout << "Jumlah perulangan = " << perulanganDoWhile << endl;
 }
